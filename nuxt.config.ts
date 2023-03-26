@@ -1,3 +1,5 @@
+import vuetify from 'vite-plugin-vuetify'
+
 export default defineNuxtConfig({
   ssr: false,
   css: [
@@ -16,4 +18,13 @@ export default defineNuxtConfig({
     server: false,
     client: false,
   },
+  hooks: {
+    'vite:extendConfig': (config) => {
+      config.plugins?.push(
+        vuetify({
+          styles: { configFile: './settings.scss' },
+        })
+      )
+    }
+  }
 })
