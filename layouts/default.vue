@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import appHeader from "~~/components/appHeader.vue"
+import appHeader from "~/components/AppHeader.vue"
 
 export default {
     name: 'default',
@@ -19,7 +19,8 @@ export default {
 </script>
 
 <style>
-body {
+body, html {
     background: #D3D3D3;
 }
+
 </style>

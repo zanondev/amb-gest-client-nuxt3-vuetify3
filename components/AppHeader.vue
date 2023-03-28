@@ -1,16 +1,27 @@
 <template>
   <v-card>
     <v-layout>
-      <!-- <v-system-bar color="deep-purple darken-3"></v-system-bar> -->
-
       <v-app-bar color="white" prominent>
-        <v-spacer></v-spacer>
-
-        <v-btn variant="text" icon="mdi-magnify"></v-btn>
-
-        <v-btn variant="text" icon="mdi-filter"></v-btn>
-
-        <v-btn variant="text" icon="mdi-dots-vertical"></v-btn>
+        <v-spacer>
+          <nuxt-link style="text-decoration: none" to="/">
+            <v-icon
+              class="btnHome"
+              color="black"
+              size="x-large"
+              icon="mdi-home"
+            ></v-icon>
+          </nuxt-link>
+        </v-spacer>
+        <v-col cols="auto">
+          <v-btn variant="text" class="btnSingIn" size="small" to="/login"
+            >Entrar</v-btn
+          >
+        </v-col>
+        <v-col cols="auto">
+          <v-btn class="btnStartFree" block rounded="xl" size="small"
+            >Começe grátis</v-btn
+          >
+        </v-col>
       </v-app-bar>
     </v-layout>
   </v-card>
@@ -23,4 +34,17 @@ export default {
 </script>
 
 <style>
+.btnStartFree {
+  background: #5d8d49;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.v-btn--variant-contained::before {
+box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.btnHome {
+  padding-left: 1em;
+}
 </style>
