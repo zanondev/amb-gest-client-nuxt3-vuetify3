@@ -27,5 +27,6 @@ export default defineNuxtConfig({
       )
     }
   },
-  pages: true
+  pages: true,
+  components: true
 })

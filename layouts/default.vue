@@ -1,17 +1,17 @@
 <template>
   <div>
-    <app-header />
+    <navigation />
     <slot />
   </div>
 </template>
 
 <script>
-import appHeader from "~~/components/Navigation.vue"
+import navigation from "~~/components/Navigation.vue"
 
 export default {
     name: 'default',
     components: {
-        appHeader
+        navigation
     }
 
     
