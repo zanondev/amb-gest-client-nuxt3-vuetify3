@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import documentSetup from "~~/components/DocumentSetup.vue";
+import DocumentView from "~~/components/DocumentView.vue";
 import CardDefault from "~~/components/CardDefault.vue";
 
 export default {
@@ -59,7 +59,7 @@ export default {
   }),
   name: "default",
   components: {
-    documentSetup,
+    DocumentView,
     CardDefault,
   },
 };
