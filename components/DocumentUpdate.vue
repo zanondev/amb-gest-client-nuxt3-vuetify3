@@ -1,4 +1,8 @@
 <template>
+  <div class="options">
+    <v-btn class="btnSave"> Salvar </v-btn>
+  </div>
+
   <div class="mx-auto teste">
     <div class="d-flex" v-for="(combobox, index) in comboboxes" :key="index">
       <v-combobox
@@ -19,14 +23,14 @@
     <div>
       <v-btn
         size="x-large"
-        class="btnAdd "
+        class="btnAdd"
         icon="mdi-plus-circle-outline"
         variant="text"
         @click="addCombobox"
       ></v-btn>
-      <v-text class="d-block pa-3" v-if="comboboxes.length == 0">
+      <span class="d-block pa-3" v-if="comboboxes.length == 0">
         Adicione um item
-      </v-text>
+      </span>
     </div>
   </div>
 </template>
@@ -49,8 +53,14 @@ export default {
       this.comboboxes.push({ selectedDocument: null });
     },
     removeCombobox(index) {
-      if (confirm('Tem certeza que deseja remover este item? Todos os dados históricos serão removidos permanentemente.')) {
-        this.comboboxes.splice(index, 1)
+      const combobox = this.comboboxes[index];
+      if (
+        combobox.selectedDocument === null ||
+        confirm(
+          "Tem certeza que deseja remover este item? Todos os dados históricos serão removidos permanentemente."
+        )
+      ) {
+        this.comboboxes.splice(index, 1);
       }
     },
   },
@@ -59,7 +69,7 @@ export default {
 
 <style>
 .teste {
-  margin-top: 7em;
+  margin-top: 20px;
   padding-left: 15em;
   padding-right: 15em;
   text-align: center;
@@ -72,5 +82,16 @@ export default {
 .btnAdd {
   color: rgb(158, 158, 158);
   font-size: 50px;
+}
+
+.btnSave {
+  background: #5d8d49;
+  color: #ffff;
+}
+
+.options {
+  margin-top: 7em;
+  padding-right: 18em;
+  text-align: right;
 }
 </style>
