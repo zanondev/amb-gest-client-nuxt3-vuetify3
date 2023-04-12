@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <card-default>
     <div v-for="(document, index) in documents" :key="index">
       <document-view :document="document"/>
     </div>
-  </div>
+  </card-default>
 </template>
 
 <script>

@@ -2,7 +2,6 @@
   <div class="options">
     <v-btn class="btnSave"> Salvar </v-btn>
   </div>
-
   <div class="mx-auto teste">
     <div class="d-flex" v-for="(combobox, index) in comboboxes" :key="index">
       <v-combobox
@@ -69,10 +68,8 @@ export default {
 
 <style>
 .teste {
-  margin-top: 20px;
-  padding-left: 15em;
-  padding-right: 15em;
   text-align: center;
+  padding: 10px;
 }
 
 .btnRemove {
@@ -80,7 +77,7 @@ export default {
 }
 
 .btnAdd {
-  color: rgb(158, 158, 158);
+  color: #B7B7B7;
   font-size: 50px;
 }
 
@@ -90,8 +87,7 @@ export default {
 }
 
 .options {
-  margin-top: 7em;
-  padding-right: 18em;
+  padding: 10px;
   text-align: right;
 }
 </style>

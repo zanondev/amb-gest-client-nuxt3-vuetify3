@@ -76,8 +76,9 @@ export default {
 
 <style>
 .docView {
-  max-width: 700px;
-  margin-top: 5px;
+  padding: 10px;
+  width: 95%;
+  margin: 20px;
 }
 
 .markedStar {
@@ -94,9 +95,5 @@ export default {
 
 .docName {
   font-size: 14px;
-}
-
-html {
-  margin-top: 7em;
 }
 </style>

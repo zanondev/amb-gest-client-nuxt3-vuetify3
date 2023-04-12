@@ -1,5 +1,5 @@
 <template>
-  <div class="container-login">
+  <div>
     <v-card width="400" class="mx-auto card-login">
       <v-form validate-on="submit" @submit.prevent="submit">
         <v-text-field
@@ -33,9 +33,6 @@ export default {};
 </script>
 
 <style>
-.container-login {
-  padding-top: 10em;
-}
 
 .card-login {
   padding: 1em;
