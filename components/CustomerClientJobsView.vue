@@ -1,0 +1,82 @@
+<template>
+<div class="options">
+    <v-btn class="btnAdd"> Adicionar </v-btn>
+  </div>
+  <v-table
+    fixed-header
+    height="300px"
+    class="jobTable"
+  >
+    <thead>
+      <tr>
+        <th class="text-center">
+          Descrição/Atividade
+        </th>
+        <th class="text-center">
+          Etapa de Licenciamento
+        </th>
+        <th class="text-center">
+          Local
+        </th>
+        <th class="text-center">
+          Ações
+        </th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        v-for="job in jobs"
+        :key="job.name"
+      >
+        <td>{{ job.activity }}</td>
+        <td class="text-center">{{ job.licensingType }}</td>
+        <td class="text-center">{{ job.address }}</td>
+         <td class="text-center">
+            <v-btn icon="mdi-pencil-circle" color="#8B8000" variant="text" @click="editJob(index)"></v-btn>
+            <v-btn icon="mdi-delete-circle" color="#8B0000" variant="text" @click="deleteJob(index)"></v-btn>
+            <v-btn icon="mdi-eye-circle" color="#00008b" variant="text" @click="enterJob(index)"></v-btn>
+        </td>
+      </tr>
+    </tbody>
+  </v-table>
+</template>
+
+<script>
+  export default {
+    props: {
+      jobs: {
+        type: Array,
+        default: () => []
+      }
+    },
+   methods: {
+    editJob(index) {
+      console.log("Editar job " + index);
+    },
+    deleteJob(index) {
+      console.log("Excluir job " + index);
+    },
+    enterJob(index) {
+      console.log("Enter job " + index);
+    }
+  }
+};
+</script>
+
+<style>
+.jobTable{
+  padding: 10px;
+}
+
+.btnAdd {
+  background: #5d8d49;
+  color: #ffff;
+}
+
+.options {
+  padding: 10px;
+  text-align: right;
+}
+
+</style>

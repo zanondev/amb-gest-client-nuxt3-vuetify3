@@ -78,7 +78,7 @@ export default {
 .docView {
   padding: 10px;
   width: 95%;
-  margin: 20px;
+  margin: 10px;
 }
 
 .markedStar {
