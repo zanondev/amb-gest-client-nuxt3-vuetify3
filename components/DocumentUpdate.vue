@@ -49,7 +49,9 @@ export default {
       this.comboboxes.push({ selectedDocument: null });
     },
     removeCombobox(index) {
-      this.comboboxes.splice(index, 1);
+      if (confirm('Tem certeza que deseja remover este item? Todos os dados históricos serão removidos permanentemente.')) {
+        this.comboboxes.splice(index, 1)
+      }
     },
   },
 };
