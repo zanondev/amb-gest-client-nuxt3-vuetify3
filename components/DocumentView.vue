@@ -1,54 +1,52 @@
 <template>
-  <div>
-    <v-card class="mx-auto teste">
-      <v-card-title class="d-flex">
-        <span class="docName">{{ document.name }}</span>
+  <v-card class="mx-auto docView">
+    <v-card-title class="d-flex mx-auto">
+      <span class="docName">{{ document.name }}</span>
 
-        <v-spacer></v-spacer>
-        <v-btn
-          style="color: #5d8d49"
-          variant="text"
-          :icon="mark ? 'mdi-star markedStar' : 'mdi-star-outline'"
-          @click="toggleMark"
-        ></v-btn>
-      </v-card-title>
+      <v-spacer></v-spacer>
+      <v-btn
+        style="color: #5d8d49"
+        variant="text"
+        :icon="mark ? 'mdi-star markedStar' : 'mdi-star-outline'"
+        @click="toggleMark"
+      ></v-btn>
+    </v-card-title>
 
-      <v-card-actions style="color: white" class="actions">
-        <v-btn
-          :icon="show ? 'mdi-tooltip-question-outline' : 'mdi-tooltip-question'"
-          @click="toggleShow"
-        ></v-btn>
-        <v-btn icon="mdi-message-text"></v-btn>
+    <v-card-actions style="color: white" class="actions">
+      <v-btn
+        :icon="show ? 'mdi-tooltip-question-outline' : 'mdi-tooltip-question'"
+        @click="toggleShow"
+      ></v-btn>
+      <v-btn icon="mdi-message-text"></v-btn>
 
-        <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
 
-        <v-btn icon="mdi-arrow-down-bold-box"></v-btn>
-        <v-btn icon="mdi-folder-multiple-plus"></v-btn>
-      </v-card-actions>
+      <v-btn icon="mdi-arrow-down-bold-box"></v-btn>
+      <v-btn icon="mdi-folder-multiple-plus"></v-btn>
+    </v-card-actions>
 
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
 
-          <v-card-text class="d-flex">
-            <span>
-              <h4>O que é isso?</h4>
-              {{ document.description }}</span
-            >
-            <span>
-              <h4>Onde conseguir?</h4>
-              {{ document.whereToGet }}</span
-            >
-            <br />
-            <span>
-              <h4>Responsabilidade?</h4>
-              {{ document.reponsability }}</span
-            >
-          </v-card-text>
-        </div>
-      </v-expand-transition>
-    </v-card>
-  </div>
+        <v-card-text class="d-flex">
+          <span>
+            <h4>O que é isso?</h4>
+            {{ document.description }}</span
+          >
+          <span>
+            <h4>Onde conseguir?</h4>
+            {{ document.whereToGet }}</span
+          >
+          <br />
+          <span>
+            <h4>Responsabilidade?</h4>
+            {{ document.reponsability }}</span
+          >
+        </v-card-text>
+      </div>
+    </v-expand-transition>
+  </v-card>
 </template>
 
 <script>
@@ -77,9 +75,9 @@ export default {
 </script>
 
 <style>
-.teste {
+.docView {
   max-width: 700px;
-  margin-top: 7em;
+  margin-top: 5px;
 }
 
 .markedStar {
@@ -96,5 +94,9 @@ export default {
 
 .docName {
   font-size: 14px;
+}
+
+html {
+  margin-top: 7em;
 }
 </style>
