@@ -1,6 +1,6 @@
 <template>
 <div class="options">
-    <v-btn class="btnAdd"> Adicionar </v-btn>
+    <v-btn size="small" class="btnAdd"> Adicionar serviço </v-btn>
   </div>
   <v-table
     fixed-header
@@ -70,13 +70,14 @@
 }
 
 .btnAdd {
-  background: #5d8d49;
+  background: #487d76;
   color: #ffff;
+  text-transform: none;
 }
 
 .options {
   padding: 10px;
-  text-align: right;
+  text-align: left;
 }
 
 </style>

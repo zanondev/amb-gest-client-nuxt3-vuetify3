@@ -1,5 +1,6 @@
 <template>
-  <v-card class="mx-auto docView">
+<div>
+ <v-card class="mx-auto docView">
     <v-card-title class="d-flex mx-auto">
       <span class="docName">{{ document.name }}</span>
 
@@ -47,6 +48,7 @@
       </div>
     </v-expand-transition>
   </v-card>
+</div>
 </template>
 
 <script>

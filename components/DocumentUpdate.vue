@@ -1,6 +1,6 @@
 <template>
   <div class="options">
-    <v-btn class="btnSave"> Salvar </v-btn>
+    <v-btn size="small" class="btnSave"> Salvar </v-btn>
   </div>
   <div class="mx-auto teste">
     <div class="d-flex" v-for="(combobox, index) in comboboxes" :key="index">
@@ -78,16 +78,17 @@ export default {
 
 .btnAdd {
   color: #B7B7B7;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .btnSave {
-  background: #5d8d49;
+  background: #487d76;
   color: #ffff;
+   text-transform: none;
 }
 
 .options {
   padding: 10px;
-  text-align: right;
+  text-align: left;
 }
 </style>

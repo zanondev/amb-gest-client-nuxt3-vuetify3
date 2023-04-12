@@ -1,5 +1,8 @@
 <template>
   <card-default>
+    <div class="options">
+    <v-btn class="btnEdit" size="small" elevation="2" variant="text"> Editar documentos </v-btn>
+  </div>
     <div v-for="(document, index) in documents" :key="index">
       <document-view :document="document"/>
     </div>
@@ -43,4 +46,14 @@ export default {
 </script>
 
 <style>
+.btnEdit {
+  background: #487d76;
+  color: #ffff;
+  text-transform: none;
+}
+
+.options {
+  padding: 10px;
+  text-align: left;
+}
 </style>
