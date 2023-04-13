@@ -34,7 +34,7 @@
           ></v-btn>
         </td>
         <td class="text-center">
-          <v-btn class="btnEnter" @click="enterClient(index)"> Entrar </v-btn>
+          <v-btn to="/customers/customerclients/jobs" class="btnEnter" @click="enterClient(index)"> Entrar </v-btn>
         </td>
       </tr>
     </tbody>

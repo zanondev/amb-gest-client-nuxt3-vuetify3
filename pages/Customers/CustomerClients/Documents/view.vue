@@ -43,6 +43,14 @@ export default {
             "Pellentesque nec diam ac tortor convallis fringilla vel vel dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
           reponsability: "Lorem ipsum dolor sit ame",
         },
+        {
+          name: "Manifestação da concessionária de abastecimento de água relativa a restrições e/ou afastamentos mínimos do ponto de captação (Cópia).",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum faucibus diam in vestibulum. Fusce tempor ligula nec nunc porttitor, id condimentum purus interdum.",
+          whereToGet:
+            "Pellentesque nec diam ac tortor convallis fringilla vel vel dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+          reponsability: "Lorem ipsum dolor sit ame",
+        },
       ],
       clientInfo: {
         name: "John Doe",

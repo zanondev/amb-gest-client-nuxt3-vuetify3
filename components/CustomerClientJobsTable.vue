@@ -39,7 +39,7 @@
             <v-btn icon="mdi-delete-circle" class="btnDelete" color="#8B0000" variant="text" @click="deleteJob(index)"></v-btn>
         </td>
         <td>
-          <v-btn class="btnEnter" @click="enterClient(index)"> Entrar </v-btn>
+          <v-btn to="/customers/customerclients/documents/update" class="btnEnter" @click="enterClient(index)"> Entrar </v-btn>
         </td>
       </tr>
     </tbody>

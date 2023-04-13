@@ -33,8 +33,9 @@
         ></v-list-item>
         <v-list-item
           prepend-icon="mdi-account-multiple"
-          title="Shared with me"
+          title="Clientes"
           value="shared"
+          to="/customers/customerclients/clients"
         ></v-list-item>
         <v-list-item
           prepend-icon="mdi-star"

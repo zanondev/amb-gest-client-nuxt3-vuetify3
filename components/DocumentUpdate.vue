@@ -1,6 +1,6 @@
 <template>
   <div class="options">
-    <v-btn size="small" class="btnSave"> Salvar </v-btn>
+    <v-btn to="/customers/customerclients/documents/view" size="small" class="btnSave"> Salvar </v-btn>
   </div>
   <div class="mx-auto teste">
     <div class="d-flex" v-for="(combobox, index) in comboboxes" :key="index">
