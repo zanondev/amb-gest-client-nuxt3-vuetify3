@@ -77,14 +77,14 @@ export default {
 }
 
 .btnAdd {
-  color: #B7B7B7;
+  color: #b7b7b7;
   font-size: 40px;
 }
 
 .btnSave {
-  background: #487d76;
+  background: #5d8d49;
   color: #ffff;
-   text-transform: none;
+  text-transform: none;
 }
 
 .options {

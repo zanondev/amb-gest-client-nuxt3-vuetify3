@@ -21,6 +21,8 @@
         <th class="text-center">
           Ações
         </th>
+        <th class="text-center">
+        </th>
 
       </tr>
     </thead>
@@ -33,9 +35,11 @@
         <td class="text-center">{{ job.licensingType }}</td>
         <td class="text-center">{{ job.address }}</td>
          <td class="text-center">
-            <v-btn icon="mdi-pencil-circle" color="#8B8000" variant="text" @click="editJob(index)"></v-btn>
-            <v-btn icon="mdi-delete-circle" color="#8B0000" variant="text" @click="deleteJob(index)"></v-btn>
-            <v-btn icon="mdi-eye-circle" color="#00008b" variant="text" @click="enterJob(index)"></v-btn>
+            <v-btn icon="mdi-pencil-circle" class="btnEdit" color="#8B8000" variant="text" @click="editJob(index)"></v-btn>
+            <v-btn icon="mdi-delete-circle" class="btnDelete" color="#8B0000" variant="text" @click="deleteJob(index)"></v-btn>
+        </td>
+        <td>
+          <v-btn class="btnEnter" @click="enterClient(index)"> Entrar </v-btn>
         </td>
       </tr>
     </tbody>
@@ -69,15 +73,19 @@
   padding: 10px;
 }
 
-.btnAdd {
-  background: #487d76;
+.options {
+  padding: 10px;
+  text-align: left;
+}
+
+.btnEnter, .btnAdd  {
+  background: #5d8d49;
   color: #ffff;
   text-transform: none;
 }
 
-.options {
-  padding: 10px;
-  text-align: left;
+.btnEdit, .btnDelete{
+  font-size: 25px!important;
 }
 
 </style>

@@ -61,7 +61,7 @@ export default {
 
 <style>
 .btnEdit {
-  background: #487d76;
+  background: #5d8d49;
   color: #ffff;
   text-transform: none;
 }
