@@ -30,6 +30,8 @@ export default {
   background: #f3f3f3;
   padding: 10px;
   box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2);
-  min-height: 100px;
+  font-weight: bold;
+  color: #43792c;
+  text-align: center;
 }
 </style>

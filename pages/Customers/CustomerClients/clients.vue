@@ -33,7 +33,7 @@ export default {
         },
       ],
       clientInfo: {
-        name: "Clientes"
+        name: "Clientes disponíveis"
       },
     };
   },
