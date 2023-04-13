@@ -1,12 +1,9 @@
 <template>
   <v-card class="central-card mx-auto">
     <div class="clientInfo">
-      <ul>
-        <li>{{ client.name }}</li>
-        <li>{{ job.activity }}</li>
-        <li>{{ job.licencingType }}</li>
-        <li>{{ job.address }}</li>
-      </ul>
+      <div v-for="(value, key) in clientInfo" :key="key">
+      <p>{{ value }}</p>
+    </div>
     </div>
     <slot></slot>
   </v-card>
@@ -14,17 +11,11 @@
 
 <script>
 export default {
-  data() {
-    return {
-      client: {
-        name: "John Doe",
-      },
-      job: {
-        activity: "00.10.00 - Lavra a céu aberto com desmonte por explosivo.",
-        licencingType: "Licença prévia",
-        address: "Itajai - SC",
-      },
-    };
+  props: {
+    clientInfo: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
@@ -39,5 +30,6 @@ export default {
   background: #f3f3f3;
   padding: 10px;
   box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2);
+  min-height: 100px;
 }
 </style>

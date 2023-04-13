@@ -1,12 +1,12 @@
 <template>
-  <card-default>
+  <card-default :clientInfo="clientInfo">
     <customer-client-jobs :jobs="jobs" />
   </card-default>
 </template>
 
 <script>
 import CardDefault from "~~/components/CardDefault.vue";
-import CustomerClientJobs from "~~/components/CustomerClientJobsView.vue";
+import CustomerClientJobs from "~~/components/CustomerClientJobsTable.vue";
 
 export default {
   components: {
@@ -32,6 +32,9 @@ export default {
           address: 'Itajaí - SC'
         },
       ],
+      clientInfo: {
+        name: "John Doe"
+      },
     };
   },
 };
